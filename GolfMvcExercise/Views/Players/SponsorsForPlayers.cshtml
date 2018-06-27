@@ -1,0 +1,12 @@
+﻿@model GolfMvcExercise.ViewModels.PlayerSponsors
+@{
+    ViewBag.Title = "SponsorsForPlayers";
+}
+
+<h2>SponsorsForPlayers</h2>
+
+<h3> @Model.Player.Name</h3>
+
+@foreach(var sponsor in Model.Sponsors) {
+    <p>@sponsor.Name</p>
+}
